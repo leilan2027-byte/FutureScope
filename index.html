@@ -61,41 +61,35 @@
         </div>
     </section>
 
-    <!-- Demo Dashboard -->
-    <section class="demo">
-        <div class="container">
-            <h2>Decision Dashboard Preview</h2>
-            <div class="dashboard-preview">
-                <div class="decision-header">
-                    <h3>College Choice Analysis</h3>
-                    <span class="decision-status">In Progress</span>
-                </div>
-                <div class="choices-comparison">
-                    <div class="choice-card">
-                        <h4>State University</h4>
-                        <div class="score-bar">
-                            <div class="score-fill" style="width: 85%"></div>
-                        </div>
-                        <span class="score">85/100</span>
-                    </div>
-                    <div class="choice-card">
-                        <h4>Private College</h4>
-                        <div class="score-bar">
-                            <div class="score-fill" style="width: 72%"></div>
-                        </div>
-                        <span class="score">72/100</span>
-                    </div>
-                    <div class="choice-card">
-                        <h4>Community College</h4>
-                        <div class="score-bar">
-                            <div class="score-fill" style="width: 78%"></div>
-                        </div>
-                        <span class="score">78/100</span>
-                    </div>
-                </div>
+   <!-- Decision Input -->
+<section class="decision-input">
+    <div class="container">
+        <h2>Start Your Decision Analysis</h2>
+        <div class="input-form">
+            <div class="form-group">
+                <label>What decision are you trying to make?</label>
+                <input type="text" id="decisionQuestion" placeholder="e.g., Which college should I choose?">
             </div>
+            
+            <div class="form-group">
+                <label>Option 1:</label>
+                <input type="text" id="option1" placeholder="e.g., State University">
+            </div>
+            
+            <div class="form-group">
+                <label>Option 2:</label>
+                <input type="text" id="option2" placeholder="e.g., Private College">
+            </div>
+            
+            <button id="analyzeButton">Analyze My Decision</button>
         </div>
-    </section>
+        
+        <div id="results" class="results-section" style="display: none;">
+            <h3>Your Analysis Results</h3>
+            <div id="resultsContent"></div>
+        </div>
+    </div>
+</section>
 
     <!-- Pricing Section -->
     <section id="pricing" class="pricing">
